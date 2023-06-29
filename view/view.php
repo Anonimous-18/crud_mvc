@@ -38,9 +38,12 @@ $departamentos = $controller->getDepartamentos();
                             <td><?php echo $departamento['descripcion']; ?></td>
                             <td><?php echo $departamento['departamento']; ?></td>
                             <td>
+                                
+                            <a href="create.php"=<?php echo $departamento['id']; ?> class="mi btn btn-primary">insertar </a>
                                 <a href="edit.php?id=<?php echo $departamento['id']; ?>" class="mi btn btn-primary">Editar</a>
                               
                                 <a href="delete.php?id=<?php echo $departamento['id']; ?>" class="mi btn btn-danger">Eliminar</a>
+                                
                                 
                             </td>
                         </tr>
@@ -50,7 +53,6 @@ $departamentos = $controller->getDepartamentos();
         </div>
         <br>
         <br>
-        <a href="create.php" class="mi btn btn-primary">Crear Nuevo Departamento</a>
     </div>
 
 </body>
