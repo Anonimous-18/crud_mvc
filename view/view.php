@@ -44,6 +44,9 @@ $departamentos = $controller->getDepartamentos();
                               
                                 <a href="delete.php?id=<?php echo $departamento['id']; ?>" onclick="return confirm('¿Realmente desea eliminar?')"class="mi btn btn-danger">Eliminar</a>  
                             </td>
+
+
+                            guardado alerta
                            
                         </tr>
                     <?php endforeach;
