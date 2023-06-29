@@ -42,12 +42,14 @@ $departamentos = $controller->getDepartamentos();
                             <a href="create.php"=<?php echo $departamento['id']; ?> class="mi btn btn-primary">insertar </a>
                                 <a href="edit.php?id=<?php echo $departamento['id']; ?>" class="mi btn btn-primary">Editar</a>
                               
-                                <a href="delete.php?id=<?php echo $departamento['id']; ?>" class="mi btn btn-danger">Eliminar</a>
-                                
-                                
+                                <a href="delete.php?id=<?php echo $departamento['id']; ?>" onclick="return confirm('¿Realmente desea eliminar?')"class="mi btn btn-danger">Eliminar</a>  
                             </td>
+                           
                         </tr>
-                    <?php endforeach; ?>
+                    <?php endforeach;
+                     ?>
+                     
+
                 </tbody>
             </table>
         </div>
