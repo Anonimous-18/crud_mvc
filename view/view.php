@@ -19,7 +19,7 @@ $departamentos = $controller->getDepartamentos();
            Anonimous.18
            </div>
     </h1>
-        <br>
+        <br><!-- prueba-->
         <br>
         <div class="mi table-responsive">
             <table class="table table-striped">
